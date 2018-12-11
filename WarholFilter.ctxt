@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WarholFilter
-comment0.text=\r\n\ An\ image\ filter\ to\ make\ the\ image\ a\ bit\ darker.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes.\r\n\ @version\ 1.0\r\n
+comment0.text=\r\n\ An\ image\ filter\ to\ make\ the\ image\ a\ Warhol\ painting\:\r\n\ Top\ left\ inverted,\ Top\ right\ red\r\n\ Bot\ left\ blue\ \ \ \ ,\ Bot\ right\ green.\r\n\ \r\n\ @author\ Michal\ Legocki\r\n\ @version\ 1.0\r\n
 comment1.params=name
 comment1.target=WarholFilter(java.lang.String)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DarkerFilter.\r\n\ @param\ name\ The\ name\ of\ the\ filter.\r\n

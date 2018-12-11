@@ -27,9 +27,13 @@ public class VertFlipFilter extends Filter
         OFImage flipped = new OFImage(width,height);
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                flipped.setPixel(x, height-y, image.getPixel(x, y));
+                flipped.setPixel(x, height-y-1, image.getPixel(x, y));
             }
         }
-        image = flipped;
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width; x++) {
+                image.setPixel(x,y, flipped.getPixel(x, y));
+            }
+        }
     }
 }

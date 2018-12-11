@@ -256,6 +256,7 @@ public class ImageViewer
         filterList.add(new EdgeFilter("Edge Detection"));
         filterList.add(new FishEyeFilter("Fish Eye"));
         filterList.add(new VertFlipFilter("Verticle Flip"));
+        filterList.add(new WarholFilter("Warhol Painting"));
         
        
         return filterList;

@@ -39,20 +39,24 @@ public class WarholFilter extends Filter
                                                255 - pix.getGreen(),
                                                255 - pix.getBlue()));
                 red.setPixel(x, y, new Color(pix.getRed(),
-                                               255,
-                                               255));
-                blue.setPixel(x, y, new Color(255,
-                                               255,
+                                               0,
+                                               0));
+                blue.setPixel(x, y, new Color(0,
+                                               0,
                                                pix.getBlue()));
-                green.setPixel(x, y, new Color(255,
+                green.setPixel(x, y, new Color(0,
                                                pix.getGreen(),
-                                               255));
+                                               0));
                 warhol.setPixel(x,          y,            invert.getPixel(x,y));
                 warhol.setPixel(x+(width/2),y,            red.getPixel(x,y));
                 warhol.setPixel(x,          y+(height/2), blue.getPixel(x,y));
                 warhol.setPixel(x+(width/2),y+(height/2), green.getPixel(x,y));
             }
         }
-        image=warhol;
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width; x++) {
+                image.setPixel(x,y, warhol.getPixel(x, y));
+            }
+        }
     }
 }
